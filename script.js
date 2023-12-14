@@ -37,7 +37,7 @@ class Game {
         if (this.isValidMove(row, col)) {
             this.board[row][col] = this.currentPlayer.symbol;
             this.printBoard();
-            
+            this.switchPlayer();
         } else {
             console.log('Invalid move. Try again.');
         }
